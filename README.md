@@ -26,7 +26,7 @@ Etant donné qu'on ne peut pas prédéfinir le sens de la photo que l'utilisateu
 ## Algorithme en tant que tel
 Pour plus d'info aller voir sur leur repo github
 
-![Rotation image](Image github/reco_algo.png)
+![reco_algo](https://github.com/BasileAmeeuw/AppDroneDelivreur/blob/main/Image%20github/reco_algo.png)
 
 ## Suppression des données après livraison
 En effet pour ne pas etre soumis a une obligation d'inscription et une signature de droit d'utilisation, aucune donnée n'est gardée afin de respecter les RGPD
