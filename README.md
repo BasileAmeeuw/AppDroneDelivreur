@@ -1,7 +1,7 @@
 # AppDroneDelivreur
 Ce repo contient deux fichier .aia que vous pouvez ouvrir dans kodular. C'est fichier sont les deux applications indispensables à notre projets le drone livreur
 
-Voici le lien pour la documentation : [Docu app BarmanApp]() et [Docu app DelIvre]() et une vidéo d'explication supplémentaire pour les deux [Vidéo explicative]()
+Voici le lien pour la documentation : [Docu app BarmanApp]() et [Docu app DelIvre]() et une vidéo d'explication supplémentaire pour les deux [Vidéo explicative](https://youtu.be/whOkrrNxA8E)
 
 Voici une petite explication sur la database: [Vidéo d'explication](https://www.youtube.com/watch?v=zAVjq34hjDs&feature=youtu.be), l'intégration de la BDD est expliquée ci-dessous avec l'algorithme de la reconnaissance faciale
 
