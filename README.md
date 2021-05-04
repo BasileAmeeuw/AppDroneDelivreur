@@ -6,6 +6,6 @@
 
   1. Application Barman: [ici](https://github.com/BasileAmeeuw/AppDroneDelivreur/blob/main/README_BarmanApp.md)
   
-  3. Application Client: [ici](https://github.com/BasileAmeeuw/AppDroneDelivreur/blob/main/README_DelivreApp.md)
+  2. Application Client: [ici](https://github.com/BasileAmeeuw/AppDroneDelivreur/blob/main/README_DelivreApp.md)
   
 3.
