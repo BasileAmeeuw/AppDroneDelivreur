@@ -21,7 +21,7 @@ Ensuite dans notre Use Case on utilise la base de donnée d'une facon particuli�
 ## Essaie d'intégration de la photo dans l'algorithme
 Etant donné qu'on ne peut pas prédéfinir le sens de la photo que l'utilisateur va prendre, on essaye de retourner la photo dans tous les sens jusqu'a ce que ca fonctionne
 
-![Rotation image](https://github.com/BasileAmeeuw/AppDroneDelivreur/blob/main/Image%20github/BBD/photo4face.png)
+![Rotation image](https://github.com/BasileAmeeuw/AppDroneDelivreur/blob/main/Image%20github/BDD/photo4face.png)
 
 ## Algorithme en tant que tel
 Pour plus d'info aller voir sur leur repo github
