@@ -30,5 +30,7 @@ En effet pour ne pas etre soumis a une obligation d'inscription et une signature
 
 ### Référence
 [https://github.com/ageitgey/face_recognition](https://github.com/ageitgey/face_recognitionhttps://github.com/ageitgey/face_recognition)
+
 [https://www.youtube.com/watch?v=QxtIBQPIhjs](https://www.youtube.com/watch?v=QxtIBQPIhjs)
+
 [https://www.youtube.com/watch?v=UVzBQ0LkO28](https://www.youtube.com/watch?v=UVzBQ0LkO28)
