@@ -18,7 +18,8 @@ Etant donné qu'on ne peut pas prédéfinir le sens de la photo que l'utilisateu
 
 Solution pour rendre la photo lisible par l'algorithme:
 
-```try:
+<code>
+   try:
         new_image=face_recognition.load_image_file(image)
         new_face_encoding = face_recognition.face_encodings(new_image)[0]
         known_face_encodings.append(new_face_encoding)
@@ -55,8 +56,8 @@ Solution pour rendre la photo lisible par l'algorithme:
                 print("photo" , str(i) , " dans reconaissance faciale")
             except:
                 os.remove("img"+ str(i) + ".jpg")
-                print("photo ", str(i) , "non prise en compte")```
-
+                print("photo ", str(i) , "non prise en compte")
+</code>
 ## Algorithme en tant que tel
 Pour plus d'info aller voir sur leur repo github
 
