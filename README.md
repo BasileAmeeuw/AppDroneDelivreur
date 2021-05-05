@@ -21,7 +21,7 @@ Ce repo contient deux fichier .aia que vous pouvez ouvrir dans kodular. C'est fi
 
 Voici le lien pour la documentation : [README app BarmanApp](https://github.com/BasileAmeeuw/AppDroneDelivreur/blob/main/README_BarmanApp.md) et [README app DelIvre](https://github.com/BasileAmeeuw/AppDroneDelivreur/blob/main/README_DelivreApp.md) et une vidéo d'explication supplémentaire pour les deux [Vidéo explicative](https://youtu.be/whOkrrNxA8E)
 
-Voici une petite explication sur la database: [Vidéo d'explication](https://www.youtube.com/watch?v=zAVjq34hjDs&feature=youtu.be), l'intégration de la BDD est expliquée ci-dessous avec l'algorithme de la reconnaissance faciale
+Voici une petite explication sur la database: [Vidéo d'explication](https://www.youtube.com/watch?v=zAVjq34hjDs&feature=youtu.be), l'intégration de la BDD est expliquée avec l'algorithme de la reconnaissance faciale [ici](https://github.com/BasileAmeeuw/DroneDelivreur/blob/main/README_RecoFaciale.md) ainsi qu'une vue d'ensemble de la base de donnée se trouve [ici](https://github.com/BasileAmeeuw/DroneDelivreur/tree/main/DataBase)
 
 
 
