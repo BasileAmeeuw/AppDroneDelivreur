@@ -16,5 +16,5 @@ Voici donc les 6 vues principales :
 
 5. Les coordonnées <img src="https://github.com/BasileAmeeuw/AppDroneDelivreur/blob/main/Image%20github/Vues/DelIvreApp/GPS.png" width="20%"/>
 
-6. La confirmation: <img src="https://github.com/BasileAmeeuw/AppDroneDelivreur/blob/main/Image%20github/Vues/DelIvreApp/confirmation.png" width="20%"/>
+6. La confirmation: <img src="https://github.com/BasileAmeeuw/AppDroneDelivreur/blob/main/Image%20github/Vues/DelIvreApp/Confirmation.png" width="20%"/>
 
