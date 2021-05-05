@@ -18,7 +18,8 @@ Etant donné qu'on ne peut pas prédéfinir le sens de la photo que l'utilisateu
 
 Solution pour rendre la photo lisible par l'algorithme:
 
-```   try:
+``` python
+    try:
         new_image=face_recognition.load_image_file(image)
         new_face_encoding = face_recognition.face_encodings(new_image)[0]
         known_face_encodings.append(new_face_encoding)
