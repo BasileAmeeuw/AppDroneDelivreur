@@ -85,7 +85,7 @@ def land (alt):
     alt_initial = vehicle.location.global_relative_frame.alt
     for i in range (1,int((alt+0.5)*2)):
         detect1 = distance (GPIO_TRIGGER1,GPIO_ECHO1)
-        detect2 = False
+        detect2 = distance (GPIO_TRIGGER2,GPIO_ECHO2)
         if detect1 == True or detect2 == True :
             move_up(altitude)
         else :
@@ -101,7 +101,7 @@ def move_up (alt):
     gps.lon += 0.000009
     go_to(gps)
     detect1 = distance (GPIO_TRIGGER1,GPIO_ECHO1)
-    detect2 = False
+    detect2 = distance (GPIO_TRIGGER2,GPIO_ECHO2)
     if detect1 == True or detect2 == True : 
         move_down (alt)
     else :
@@ -113,7 +113,7 @@ def move_down (alt) :
     gps.lon -= 0.000009 *2
     go_to(gps)
     detect1 = distance (GPIO_TRIGGER1,GPIO_ECHO1)
-    detect2 = False
+    detect2 = distance (GPIO_TRIGGER2,GPIO_ECHO2)
     if detect1 == True or detect2 == True : 
         move_left (alt)
     else :
@@ -126,7 +126,7 @@ def move_left (alt) :
     gps.lat -= 0.000009
     go_to(gps)
     detect1 = distance (GPIO_TRIGGER1,GPIO_ECHO1)
-    detect2 = False
+    detect2 = distance (GPIO_TRIGGER2,GPIO_ECHO2)
     if detect1 == True or detect2 == True : 
         move_right (alt)
     else :
@@ -138,7 +138,7 @@ def move_right (alt) :
     gps.lat += 0.000009 *2
     go_to(gps)
     detect1 = distance (GPIO_TRIGGER1,GPIO_ECHO1)
-    detect2 = False
+    detect2 = distance (GPIO_TRIGGER2,GPIO_ECHO2)
     if detect1 == True or detect2 == True : 
         print ("No possibility")
     else :
@@ -199,6 +199,9 @@ GPIO.setmode(GPIO.BOARD)
 #set GPIO Pins
 GPIO_TRIGGER1 = board.D14
 GPIO_ECHO1 = board.D15
+
+GPIO_TRIGGER2 = board.D17
+GPIO_ECHO2 = board.D27
 
 vehicle = connect('tcp:192.168.43.25:5760', wait_ready=True)
 print('Connecting to vehicle : %s' % vehicle)
