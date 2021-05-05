@@ -1,3 +1,10 @@
+# Reconnaissance faciale
+
+Pour ce qui est de l'algorithme de reconnaissance faciale. Voici le lien github de la librairie utilisée. [Reconnaissance_faciale](https://github.com/ageitgey/face_recognition) Cependant ici après sont expliquées quelques cas d'utilisation dans notre cas.
+
+Vous pouvez suivre leur github pour l'installation qui est très bien expliquée.
+Ensuite dans notre Use Case on utilise la base de donnée d'une facon particulière pour l'algorithme de reconnaissance.
+
 ## Intégration de la base de donnée
 
 ![Intégration base de donnée](https://github.com/BasileAmeeuw/AppDroneDelivreur/blob/main/Image%20github/BDD/IntegrationBDD.png)
@@ -20,3 +27,8 @@ Pour plus d'info aller voir sur leur repo github
 En effet pour ne pas etre soumis a une obligation d'inscription et une signature de droit d'utilisation, aucune donnée n'est gardée afin de respecter les RGPD
 
 ![RGPD](https://github.com/BasileAmeeuw/AppDroneDelivreur/blob/main/Image%20github/BDD/suppressionBDD.png)
+
+### Référence
+[https://github.com/ageitgey/face_recognition](https://github.com/ageitgey/face_recognitionhttps://github.com/ageitgey/face_recognition)
+[https://www.youtube.com/watch?v=QxtIBQPIhjs](https://www.youtube.com/watch?v=QxtIBQPIhjs)
+[https://www.youtube.com/watch?v=UVzBQ0LkO28](https://www.youtube.com/watch?v=UVzBQ0LkO28)
