@@ -21,7 +21,7 @@ Ce repo contient deux fichier .aia que vous pouvez ouvrir dans kodular. C'est fi
 
 Voici le lien pour la documentation : [README app BarmanApp](https://github.com/BasileAmeeuw/AppDroneDelivreur/blob/main/README_BarmanApp.md) et [README app DelIvre](https://github.com/BasileAmeeuw/AppDroneDelivreur/blob/main/README_DelivreApp.md) et une vidéo d'explication supplémentaire pour les deux [Vidéo explicative](https://youtu.be/whOkrrNxA8E)
 
-Database et reconnaissance faciale: L'intégration de la BDD est expliquée avec l'algorithme de la reconnaissance faciale [ici](https://github.com/BasileAmeeuw/DroneDelivreur/blob/main/README_RecoFaciale.md) ainsi que les explications sur la base de données [ici](https://github.com/BasileAmeeuw/DroneDelivreur/tree/main/DataBase) ainsi qu'une [Vidéo d'explication](https://www.youtube.com/watch?v=zAVjq34hjDs&feature=youtu.be)
+Database et reconnaissance faciale: L'intégration de la BDD est expliquée avec l'algorithme de la reconnaissance faciale [ici](https://github.com/BasileAmeeuw/DroneDelivreur/blob/main/README_RecoFaciale.md) ainsi que les explications sur la base de données [ici](https://github.com/BasileAmeeuw/DroneDelivreur/tree/main/README_DataBase) ainsi qu'une [Vidéo d'explication](https://www.youtube.com/watch?v=zAVjq34hjDs&feature=youtu.be)
 
 # Algorithme de Vol
 Ce repo contient les scripts permettant de tester les fonctions de vol et l'algorithme de vol. Il est également possible de tester le capteur à UltraSon HC-SR04 depuis une Raspberry Pi.
