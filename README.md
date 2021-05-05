@@ -23,9 +23,5 @@ Voici le lien pour la documentation : [README app BarmanApp](https://github.com/
 
 Voici une petite explication sur la database: [Vidéo d'explication](https://www.youtube.com/watch?v=zAVjq34hjDs&feature=youtu.be), l'intégration de la BDD est expliquée ci-dessous avec l'algorithme de la reconnaissance faciale
 
-Pour ce qui est de l'algorithme de reconnaissance faciale. Voici le lien github de la librairie utilisée. [Reconnaissance_faciale](https://github.com/ageitgey/face_recognition) Cependant ici après sont expliquées quelques cas d'utilisation dans notre cas.
-
-Vous pouvez suivre leur github pour l'installation qui est très bien expliquée.
-Ensuite dans notre Use Case on utilise la base de donnée d'une facon particulière pour l'algorithme de reconnaissance.
 
 
