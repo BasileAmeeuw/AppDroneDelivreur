@@ -6,15 +6,15 @@ Toutes ces vues se retrouvent donc dans Kodular : <img src="https://github.com/B
 
 Voici donc les 6 vues principales :
 
-1. L'accueil: ![accueil](https://github.com/BasileAmeeuw/AppDroneDelivreur/blob/main/Image%20github/Vues/DelIvreApp/accueil.png width="40%")
+1. L'accueil: <img src="https://github.com/BasileAmeeuw/AppDroneDelivreur/blob/main/Image%20github/Vues/DelIvreApp/accueil.png" width="40%"/>
 
-2. La page photo: ![photo](https://github.com/BasileAmeeuw/AppDroneDelivreur/blob/main/Image%20github/Vues/DelIvreApp/photo.png width="40%")
+2. La page photo: <img src="https://github.com/BasileAmeeuw/AppDroneDelivreur/blob/main/Image%20github/Vues/DelIvreApp/photo.png width="40%"/>
 
-3. La commande: ![commande](https://github.com/BasileAmeeuw/AppDroneDelivreur/blob/main/Image%20github/Vues/DelIvreApp/commande.png width="40%")
+3. La commande: <img src="https://github.com/BasileAmeeuw/AppDroneDelivreur/blob/main/Image%20github/Vues/DelIvreApp/commande.png width="40%"/>
 
-4. Le payement: ![payement](https://github.com/BasileAmeeuw/AppDroneDelivreur/blob/main/Image%20github/Vues/DelIvreApp/payement.png width="40%")
+4. Le payement: <img src="https://github.com/BasileAmeeuw/AppDroneDelivreur/blob/main/Image%20github/Vues/DelIvreApp/payement.png width="40%"/>
 
-5. Les coordonnées GPS: ![GPS](https://github.com/BasileAmeeuw/AppDroneDelivreur/blob/main/Image%20github/Vues/DelIvreApp/GPS.png width="40%")
+5. Les coordonnées <img src="https://github.com/BasileAmeeuw/AppDroneDelivreur/blob/main/Image%20github/Vues/DelIvreApp/GPS.png width="40%"/>
 
-6. La confirmation: ![confirmation](https://github.com/BasileAmeeuw/AppDroneDelivreur/blob/main/Image%20github/Vues/DelIvreApp/confirmation.png width="40%")
+6. La confirmation: <img src="https://github.com/BasileAmeeuw/AppDroneDelivreur/blob/main/Image%20github/Vues/DelIvreApp/confirmation.png width="40%"/>
 
