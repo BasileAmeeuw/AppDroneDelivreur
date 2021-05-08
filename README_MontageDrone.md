@@ -46,7 +46,7 @@ Le module GPS est composé d'un PCB connecté au flight controller et d'une ante
 
 ### D. Train d'atterissage
 
-Le train d'atterissage vient simplement remplacer celui fourni avec le chassis QAV 250. Les pieds sont plus longs et se fixe plus proches des moteurs afin d'augmenter la stabilité du drone au sol et de laisser plus de passage pour le plateau de transport des shots.
+Le train d'atterissage vient simplement remplacer celui fourni avec le chassis QAV 250. Les pieds sont plus longs et se fixe plus proches des moteurs afin d'augmenter la stabilité du drone au sol et de laisser plus de passage pour le plateau de transport des shots. Pour s'assurer de la stabilité du drône, après l'installation du train, effectuez une légère pression sur le drone et observez si les pieds bougent ou restent en place. Si ils bougent, il faudra simplement augmenter le frottement entre leur point d'attache et le drone, avec du tape ou en les reculant un peu plus sur les branches.
 
 <p align="center">INSERT PHOTO TRAIN
   
