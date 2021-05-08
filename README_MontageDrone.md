@@ -20,7 +20,7 @@ La batterie Lion 14.8V 4s de 2300 mAh se place sur le dessus du chassis au moyen
 
 ## 2. Pièces imprimées
 
-Avant d'imprimer les pièces, il est important d'aller voir la documentation [Discussion et amélioration des pièces 3D](https://github.com/BasileAmeeuw/DroneDelivreur/blob/main/Design3D%20STL/Discussion%20et%20am%C3%A9lioration%20des%20pi%C3%A8ces%203D)
+Avant d'imprimer les pièces, il est important d'aller voir la documentation [Discussion et amélioration des pièces 3D](https://github.com/BasileAmeeuw/DroneDelivreur/blob/main/Design3D%20STL/Discussion%20et%20am%C3%A9lioration%20des%20pi%C3%A8ces%203D.md)
 
 ### A. Boitier Raspberry Pi Zero
 
