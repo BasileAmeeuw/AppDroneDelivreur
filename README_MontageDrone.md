@@ -4,15 +4,17 @@
 
 Le chassis utilisé est le QAV 250. Il est fourni avec toute la visserie nécessaire à son assemblage. La pièce "A" qui se place sur le dessus du chassis n'est pas nécessaire dans ce projet, elle ne sera pas montée dessus.
 
-<p align="center"><img src="https://user-images.githubusercontent.com/50197705/117187407-28920280-addc-11eb-9fe1-ca7f4018f014.jpg" alt="PieceA" width="170" height="150">
+<p align="center"><img src="https://user-images.githubusercontent.com/50197705/117539922-ffa48400-b00c-11eb-9665-dfd01454da7d.png" alt="PieceA" width="220" height="200">
+
 
 Les moteurs DC XXX sont montés sur les branches du chassis, ils doivent être placés de sorte que les moteurs tournant dans le même sens soit en diagonale comme illustré ci-dessous.
 
-<p align="center"><img src="https://user-images.githubusercontent.com/50197705/117295954-c6391080-ae74-11eb-971b-adc23ea421f1.png" alt="Motor Installation" width="200" height="200">
+<p align="center"><img src="https://user-images.githubusercontent.com/50197705/117539686-0a124e00-b00c-11eb-8e64-1dd3038c38f5.png" alt="Motor Installation" width="250" height="250">
+
 
 Le controlleur de vol F405-STD ainsi que la carte de distribution de puissance BEC XT60 sont installés au centre du chassis. Les ESC, eux-même soudés aux moteurs, sont soudés à la carte de puissance ; il faudra faire attention à souder correctement les moteurs comme ci-dessous pour respecter leur sens de rotation.
 
-<p align="center"><img src="https://user-images.githubusercontent.com/50197705/117291760-af43ef80-ae6f-11eb-8467-825054a87ce7.png" alt="ESC Welding" width="425" height="150">
+<p align="center"><img src="https://user-images.githubusercontent.com/50197705/117539449-fca89400-b00a-11eb-99fa-17694d365739.png" alt="ESC Welding" width="425" height="170">
   
 La batterie Lion 14.8V 4s de 2300 mAh se place sur le dessus du chassis au moyen d'un velcro collé à ce dernier. La connection à la carte de puissance se fait à travers un interrupteur on/off afin d'allumer et éteindre le drone plus facilement.
 
@@ -32,7 +34,7 @@ Ce boitier se place sous le drone, proche des branches des moteurs, au moyen de 
 
 La camera se place au moyen d'un petit support imprimé qui lui-même se visse à la pièce du chassis ci-dessous. Il faudra utiliser 8 vis M2 pour fixer le support au chassis et fixer la camera au support. La camera peut ensuite être connectée à la Raspberry Pi Zero au moyen de la nappe de cables par l'avant du boitier Raspeberry.
 
-<p align="center"><img src="https://user-images.githubusercontent.com/50197705/117321644-9d714500-ae8d-11eb-846b-8bc21bca98b9.jpg" alt="Piece B" width="150" height="150">
+<p align="center"><img src="https://user-images.githubusercontent.com/50197705/117539412-cc60f580-b00a-11eb-93cb-357e965fd160.png" alt="Piece B" width="150" height="150">
 
 <p align="center">INSERT PHOTO DE LA CAM INSTALLÉE
 
