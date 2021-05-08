@@ -7,7 +7,7 @@ La pièce doit également être légèrement revue au niveau de l'ouverture qui 
 
 ## 2. Support du module GPS
 
-Afin de capter un meilleur signal GPS, l'antenne du module doit se trouver dans un endroit dégagé pour faciliter au mieux la connection aux satellites. Le support se trouve donc sur le dessus du chassis et maintient bien en place l'antenne. Pour plus de sécurité, un peu de collant double-face ou autre moyen d'adhésion va maintenir l'antenne même en cas de mouvement brusque.
+Afin de capter un meilleur signal GPS, l'antenne du module doit se trouver dans un endroit dégagé pour faciliter au mieux la connection aux satellites. Le support se trouve donc sur le dessus du chassis et maintient bien en place l'antenne. Pour plus de sécurité, un peu de collant double-face ou autre moyen d'adhésion va maintenir l'antenne même en cas de mouvement brusque.<p>
 Le support se fixe gâce à des vis sur le chassis, il faudrait néanmoins augmenter de 0.5 à 1mm l'espacement entre les 2 perçages pour tomber parfaitement en face des trous autrement la force des vis peut déformer le support et le fragiliser.
 <p align="center"><img src="https://user-images.githubusercontent.com/50197705/117540840-5ad87580-b011-11eb-9fc1-dc616900566b.PNG" widht="350" height="350">
 
@@ -17,12 +17,13 @@ Le train d'atterissage permet au drone d'être surélévé d'à peu près 10 cm 
 
 ## 4. Système de plateau de livraison
 
-Ici plusieurs problèmes se posaient, comment permettre de transporter des consommables..
-    - Sans géner le drone?
-    - Sans renverser le contenu des verres?
-    - Tout en permettant de les récupérer facilement?
+Ici plusieurs problèmes se posaient, comment permettre de transporter des consommables...
+<p>
+    - Sans géner le drone?<p>
+    - Sans renverser le contenu des verres?<p>
+    - Tout en permettant de les récupérer facilement?<p>
     - Tout en permettant de les placer facilement?
 
-Avec le système actuel, le drone n'est pas géné dans ses mouvements tant qu'ils restent simples. Monter, descendre, pivoter, avancer et reculer sont les mouvements basiques de déplacement que le drone utilisera lors de ses "missions". Les modules UltraSons sont situés en dessous des attaches du plateau, à cet endroit ils remplissent correctement leur fonction mais le fait d'avoir des fils apparants à cet endroit pourrait poser problème si il y a un incident avec le drone.
-Le système imaginé permet de maintenir le plateau à l'horizontal lorsque le drone avance ou recule, ceci permettra de s'assurer que le contenu n'est pas renversé durant le transport. De petits convercles placés sur les verres assureront les derières pertes possibles lors de la livraison.
+Avec le système actuel, le drone n'est pas géné dans ses mouvements tant qu'ils restent simples. Monter, descendre, pivoter, avancer et reculer sont les mouvements basiques de déplacement que le drone utilisera lors de ses "missions". Les modules UltraSons sont situés en dessous des attaches du plateau, à cet endroit ils remplissent correctement leur fonction mais le fait d'avoir des fils apparants à cet endroit pourrait poser problème si il y a un incident avec le drone.<p>
+Le système imaginé permet de maintenir le plateau à l'horizontal lorsque le drone avance ou recule, ceci permettra de s'assurer que le contenu n'est pas renversé durant le transport. De petits convercles placés sur les verres assureront les derières pertes possibles lors de la livraison.<p>
 Le plateau est facile à installer et à désinstaller lorsque le drone est à l'arrêt et poser au sol. Cela permettre au barman d'exécutrer les commandes plus rapidement et aux clients de récupérer leur commande facilement.
