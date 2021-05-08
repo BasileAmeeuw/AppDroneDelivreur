@@ -8,7 +8,7 @@ Le chassis utilisé est le QAV 250. Il est fourni avec toute la visserie nécess
 
 Les moteurs DC XXX sont montés sur les branches du chassis, ils doivent être placés de sorte que les moteurs tournant dans le même sens soit en diagonale comme illustré ci-dessous.
 
-<p align="center"><img src="https://user-images.githubusercontent.com/50197705/117295954-c6391080-ae74-11eb-971b-adc23ea421f1.png" alt="Motor Installation" width="150" height="150">
+<p align="center"><img src="https://user-images.githubusercontent.com/50197705/117295954-c6391080-ae74-11eb-971b-adc23ea421f1.png" alt="Motor Installation" width="200" height="200">
 
 Le controlleur de vol F405-STD ainsi que la carte de distribution de puissance BEC XT60 sont installés au centre du chassis. Les ESC, eux-même soudés aux moteurs, sont soudés à la carte de puissance ; il faudra faire attention à souder correctement les moteurs comme ci-dessous pour respecter leur sens de rotation.
 
