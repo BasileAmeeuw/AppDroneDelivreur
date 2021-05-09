@@ -25,7 +25,11 @@ Voici donc les 6 vues principales :
 
 6. La confirmation: <img src="https://github.com/BasileAmeeuw/AppDroneDelivreur/blob/main/Image%20github/Vues/DelIvreApp/Confirmation.png" width="20%"/>
 
-Kodular étant été utilisé voici quelques blocs méritant ou nécessitant une explication:
+## Kodular étant été utilisé voici quelques blocs méritant ou nécessitant une explication:
+
+1. L'intégration de la base de donnée:
+
+<img src="https://github.com/BasileAmeeuw/DroneDelivreur/blob/main/Image%20github/BlockKodular/DelIvreApp/InkedintegrationDB.jpg" width="50%"/>
 
 2. Pour l'accueil, le bloc suivant  sert a controler si le nom et prénom sont correct afin de passer à la page suivante
 
