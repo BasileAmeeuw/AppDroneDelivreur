@@ -34,6 +34,3 @@ Voici les 4 vues principales
 4. Envoie préparation si on a récupérer les coordonnées GPS
 
 <img src="https://github.com/BasileAmeeuw/DroneDelivreur/blob/main/Image%20github/BlockKodular/BarmanApp/EnvoieIfGPS.png" width="50%"/>
-
-
-4. 
