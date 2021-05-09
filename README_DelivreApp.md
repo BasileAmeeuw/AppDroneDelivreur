@@ -10,9 +10,10 @@
 Cette application est composé en 6 vues principales, l'accueil, la page pour faire la photo, la commande, le payement, l'envoie de ses coordonnées GPS et la confirmation, mais en plus de celles-ci viennent s'ajouter une vue pour voir toutes les commandes ainsi qu'une liste de reprise de commande si il y a eu un problème avec une commande en cours.
 
 ## Téléchargement et code
-Lien .aia (ouvrir dans Kodular) [ici](https://github.com/BasileAmeeuw/DroneDelivreur/tree/main/Applications.aia)
-Lien .apk (téléchargement app) [ici](https://github.com/BasileAmeeuw/DroneDelivreur/tree/main/Applications.apk)
+* Lien .aia (ouvrir dans Kodular) [ici](https://github.com/BasileAmeeuw/DroneDelivreur/tree/main/Applications.aia)
+* Lien .apk (téléchargement app) [ici](https://github.com/BasileAmeeuw/DroneDelivreur/tree/main/Applications.apk)
 
+## Explication
 Toutes ces vues se retrouvent donc dans Kodular : <img src="https://github.com/BasileAmeeuw/AppDroneDelivreur/blob/main/Image%20github/Vues/DelIvreApp/Vues.png" width="20%"/>
 
 Voici donc les 6 vues principales :
