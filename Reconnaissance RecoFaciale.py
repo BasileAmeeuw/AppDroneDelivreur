@@ -50,103 +50,6 @@ except ValueError as e:
 os.environ["GOOGLE_APPLICATION_CREDENTIALS"]="serviceAccountKey.json"
 db = firestore.Client()
 
-###Toutes les fonctions du drone
-def arm_and_takeoff(aTargetAltitude):
-    """
-    Arms vehicle and fly to aTargetAltitude.
-    """
-
-    print("Basic pre-arm checks")
-    # Don't try to arm until autopilot is ready
-    while not vehicle.is_armable:
-        print(" Waiting for vehicle to initialise...")
-        time.sleep(1)
-
-    print("Arming motors")
-    # Copter should arm in GUIDED mode
-    vehicle.mode = VehicleMode("GUIDED")
-    vehicle.armed = True
-
-    # Confirm vehicle armed before attempting to take off
-    while not vehicle.armed:
-        print(" Waiting for arming...")
-        time.sleep(1)
-
-    print("Taking off!")
-    vehicle.simple_takeoff(aTargetAltitude)  # Take off to target altitude
-
-    # Wait until the vehicle reaches a safe height before processing the goto
-    #  (otherwise the command after Vehicle.simple_takeoff will execute
-    #   immediately).
-    while True:
-        print(" Altitude: ", vehicle.location.global_relative_frame.alt)
-        # Break and return from function just below target altitude.
-        if vehicle.location.global_relative_frame.alt >= aTargetAltitude * 0.95:
-            print("Reached target altitude", vehicle.location.global_relative_frame.alt)
-            break
-        time.sleep(1)
-
-def change_alt (altitude):
-    print ("Changing Altitude")
-    if vehicle.armed :
-        location = vehicle.location.global_relative_frame
-        final_alt = location.alt + altitude
-        location.alt = final_alt
-        vehicle.simple_goto(location)
-        while True:
-            print(" Altitude: ", vehicle.location.global_relative_frame.alt)
-            # Break and return from function just below target altitude.
-            if vehicle.location.global_relative_frame.alt >= final_alt - 0.02 and vehicle.location.global_relative_frame.alt <= final_alt + 0.02 :
-                print("Reached target altitude")
-                break
-            time.sleep(1)
-    
-    else:
-        print ("Vehicule is not Armed")
-
-def land():
-    change_alt(-1000)
-    location = vehicle.location.global_relative_frame
-    while True:
-        location.alt
-
-
-
-def go_to (relative_coord):
-    if vehicle.armed :
-        vehicle.simple_goto (relative_coord, groundspeed = 10)
-        while True :
-            print(" Vehicule is at: ", vehicle.location.global_relative_frame)
-            if (vehicle.location.global_relative_frame.lon >= relative_coord.lon - 0.00001 and vehicle.location.global_relative_frame.lon <= relative_coord.lon + 0.00001) and (vehicle.location.global_relative_frame.lat >= relative_coord.lat - 0.00001 and vehicle.location.global_relative_frame.lat <= relative_coord.lat + 0.00001) :
-                print("Target Reached")
-                break
-            time.sleep(3)
-    else:
-        print ("Vehicule is not Armed")
-
-def rtl ():
-    if vehicle.armed :
-        vehicle.mode = VehicleMode("RTL")
-        time.sleep(10)
-    else:
-        print ("Vehicule is not Armed")
-
-#GPIO Mode (BOARD / BCM)
-'''GPIO.setmode(GPIO.BOARD)'''
-
-#set GPIO Pins
-'''GPIO_TRIGGER1 = 8
-GPIO_ECHO1 = 10'''
-
-#set GPIO direction (IN / OUT)
-'''GPIO.setup(GPIO_TRIGGER1, GPIO.OUT)
-GPIO.setup(GPIO_ECHO1, GPIO.IN)'''
-
-#vehicle = connect('/dev/ttyACM0', wait_ready=True, baud=57600)
-#    vehicle = connect('tcp:127.0.0.1:5763', wait_ready=True)
-#print('Connecting to vehicle : %s' % vehicle)
-#print ("Simulation Location : \n%s" % vehicle.location.global_relative_frame)
-
 ###récupération Coord GPS
 print("Initialisation terminée, début de la boucle")
 while True:
@@ -213,14 +116,6 @@ while True:
             print(i)
             print("photo ", str(i) , "non prise en compte")
 
-    ###Décolage, jusqu'a reconaissance
-    print("décolage jusque coordonnée gps et arrivée à 1m50")
-    # arm_and_takeoff (51)
-    print("go_to position: ", coord)
-    time.sleep(2)
-    #go_to (LocationGlobalRelative(float(coord["Latitude"]), float(coord["Longitude"]), float(50)))
-    #change_alt (-48.5)
-    time.sleep(2)
     Reco=True
     #algo reconnaissance faciale
     print("lancement algorithme de reconnaissance faciale")
@@ -257,24 +152,12 @@ while True:
 
         process_this_frame = not process_this_frame
 
-    #Attérissage et déposage paquet
-    print("attérissage sur .... pour que la personne récupère sa commande")
-    '''land (48.5)'''
-    time.sleep(2)
-    print("land successfull: alt: 0")
-
-    #Attente de 1 minute avant de redémarrer
-    print("attente de 1 minute avant de redémarrer")
-    time.sleep(5)
+ 
     #suppression image du PC
     print("image supprimé de la mémoire du rpi")
     for i in range(len(nbImg)):
         os.remove("img"+ str(nbImg[i]) + ".jpg")
 
-    #retour à la base
-    print("retour à la base pour une nouvelle commande")
-    #rtl()
-    print("suppression de la commande si pas encore fait")
 
     try:
         id=str(int(doc.get("Id")))
