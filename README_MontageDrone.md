@@ -18,7 +18,7 @@ Le controlleur de vol F405-STD ainsi que la carte de distribution de puissance B
   
 La batterie Lion 14.8V 4s de 2300 mAh se place sur le dessus du chassis au moyen d'un velcro collé à ce dernier. La connection à la carte de puissance se fait à travers un interrupteur on/off afin d'allumer et éteindre le drone plus facilement.
 
-<p align="center">INSERT PHOTO BATTERIE INSTALLÉE
+<p align="center"><img src="https://user-images.githubusercontent.com/50197705/117622748-4613f300-b173-11eb-91b9-065400a7a09e.jpg" width="450" height="200">
 
 ## 2. Pièces imprimées
 
@@ -28,7 +28,8 @@ Avant d'imprimer les pièces, il est important d'aller voir la documentation [Di
 
 Ce boitier se place sous le drone, proche des branches des moteurs, au moyen de la visserie du chassis QAV 250. Les connecteurs externes de la raspberry sont encore accesibles après l'installation mais pas les pins de connections présents sur la face supérieur. Il faut donc d'abord s'assurer que les connections sont bien réalisées avant de placer le raspberry dans son boitier.
 
-<p align="center">INSERT PHOTO DU BOITIER INSTALLÉ
+<p align="center"><img src="https://user-images.githubusercontent.com/50197705/117622465-f03f4b00-b172-11eb-977d-352fc7abe302.jpg">
+
 
 ### B. Support de la Camera 
 
@@ -36,7 +37,8 @@ La camera se place au moyen d'un petit support imprimé qui lui-même se visse �
 
 <p align="center"><img src="https://user-images.githubusercontent.com/50197705/117539412-cc60f580-b00a-11eb-93cb-357e965fd160.png" alt="Piece B" width="150" height="150">
 
-<p align="center">INSERT PHOTO DE LA CAM INSTALLÉE
+<p align="center"><img src="https://user-images.githubusercontent.com/50197705/117622277-c25a0680-b172-11eb-83e3-c3af50b357aa.jpg">
+
 
 ### C. Support du module GPS
 
