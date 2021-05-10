@@ -6,4 +6,4 @@ Cette configuration consiste en plusieurs étapes :
 * Configuration du GPS
 * Configuration de la boussole
 
-Tout cela est expliquer dans la [documentation](https://github.com/BasileAmeeuw/DroneDelivreur/blob/main/Drone_Configuration.pdf) référée à ce ReadMe.
+Tout cela est expliqué dans la [documentation](https://github.com/BasileAmeeuw/DroneDelivreur/blob/main/Drone_Configuration.pdf) référée à ce ReadMe.
