@@ -9,6 +9,7 @@
   * Application Client: [ici](https://github.com/BasileAmeeuw/AppDroneDelivreur/blob/main/README_DelivreApp.md)
   
 3. Fonctions drone: [ici](https://github.com/BasileAmeeuw/DroneDelivreur/blob/main/README_FonctionDrone.md)
+4. Montage du drone : [ici](https://github.com/BasileAmeeuw/DroneDelivreur/blob/main/README_MontageDrone.md)
 
 # Scope du projet
 
