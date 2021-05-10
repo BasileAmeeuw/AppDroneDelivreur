@@ -27,7 +27,7 @@ Database et reconnaissance faciale: L'intégration de la BDD est expliquée avec
 # Algorithme de Vol
 Ce repo contient les scripts permettant de tester les fonctions de vol et l'algorithme de vol. Il est également possible de tester le capteur à UltraSon HC-SR04 depuis une Raspberry Pi.
 
-Voici le lien pour la documentation :
+N'hésitez pas à consulter le [ReadMe](https://github.com/BasileAmeeuw/DroneDelivreur/blob/main/README_FonctionDrone.md) ainsi que la documentation :
 * [Simulation d'un drone via dronekit-sitl](https://github.com/BasileAmeeuw/DroneDelivreur/blob/main/Algorithme%20de%20vol/Drone_Simulation.pdf)
 * [Communication entre la Raspberry Pi Zéro et le Flight Controller](https://github.com/BasileAmeeuw/DroneDelivreur/blob/main/Algorithme%20de%20vol/Raspberry-FC%20Communication.pdf)
 * [Utilisation de la librairie dronekit pour communiquer avec le drone](https://github.com/BasileAmeeuw/DroneDelivreur/blob/main/Algorithme%20de%20vol/Talk%20to%20the%20FC%20with%20dronekit.pdf)
