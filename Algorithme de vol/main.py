@@ -203,17 +203,157 @@ GPIO_ECHO1 = board.D15
 GPIO_TRIGGER2 = board.D17
 GPIO_ECHO2 = board.D27
 
-vehicle = connect('tcp:192.168.43.25:5760', wait_ready=True)
+vehicle = connect('udp:127.0.0.1:14550', wait_ready=True)
 print('Connecting to vehicle : %s' % vehicle)
 print ("Simulation Location : \n%s" % vehicle.location.global_relative_frame)
 init = vehicle.location.global_relative_frame
-arm_and_takeoff (10)
-go_to (LocationGlobalRelative(float(-35.3633), float(149.1652294), float(10)))
-land (8.5)
-#Face recognition
-#land a 0m ?
-change_alt (8.5)
-rtl(init)
-armed_off()
+
+
+while True:
+    nbImg=[];
+    go=True
+    while True: 
+        try:
+            doc=db.collection('Users').where("Drone","==",nDrone).get()[0]
+            break
+        except:
+            continue
+
+    nom=doc.get("Nom")
+    prenom=doc.get("Prenom")
+    coord=doc.get("GPS")
+    image=nom+"#"+prenom+".jpg"
+    print(nom,end=' ')
+    print(prenom,end="\n")
+    print(doc.get("Commande"),end="\n")
+    print(coord)
+    
+    #téléchargement image
+    storage.child(image).download(image)
+
+    ###variables d'initiation reconnaissance faciale
+    known_face_encodings = []
+    known_face_names = []
+    face_locations = []
+    face_encodings = []
+    process_this_frame = True
+
+    #Image enregistrée dans la base de donnée
+    try:
+        new_image=face_recognition.load_image_file(image)
+        new_face_encoding = face_recognition.face_encodings(new_image)[0]
+        known_face_encodings.append(new_face_encoding)
+        known_face_names.append(prenom + " " + nom)
+        print("photo", " dans reconaissance faciale")
+    except:
+        img1 = Image.open(image)
+        img1.save("img1.jpg","JPEG")
+        try:
+            time.sleep(0.001)
+            img1.save("img1.jpg","JPEG")
+            time.sleep(0.001)
+            img2=img1.rotate(90)
+            img2.show()
+            time.sleep(0.001)
+            img2.save("img2.jpg","JPEG")
+            img3=img2.rotate(90)
+            time.sleep(0.001)
+            img3.save("img3.jpg","JPEG")
+            img4=img3.rotate(90)
+            time.sleep(0.001)
+            img4.save("img4.jpg","JPEG")
+            #os.remove(image)
+            print("image enregistrée")
+        except:
+            print("probleme dans le téléchargement de l'image")
+        for i in range(1,5):
+            try:
+                new_image=face_recognition.load_image_file("img"+ str(nbImg) + ".jpg")
+                new_face_encoding = face_recognition.face_encodings(new_image)[0]
+                known_face_encodings.append(new_face_encoding)
+                known_face_names.append(prenom + " " + nom)
+                nbImg=i
+                print("photo" , str(i) , " dans reconaissance faciale")
+            except:
+                os.remove("img"+ str(i) + ".jpg")
+                print("photo ", str(i) , "non prise en compte")
+    
+
+    ###Décolage, jusqu'a reconaissance
+    print("décolage jusque coordonnée gps et arrivée à 1m50")
+    arm_and_takeoff (10)
+    print("go_to position: ", coord)
+    time.sleep(2)
+    # go_to (LocationGlobalRelative(float(-35.3633), float(149.1652294), float(10)))
+    #go_to (LocationGlobalRelative(float(coord["Latitude"]), float(coord["Longitude"]), float(50)))
+    land (8.5)
+    #Face recognition
+    #change_alt (-48.5)
+    print("descendre")
+    time.sleep(2)
+    Reco=True
+    #algo reconnaissance faciale
+    print("lancement algorithme de reconnaissance faciale")
+    while Reco:
+        # Grab a single frame of video
+        ret, frame = cv2.VideoCapture(0).read()
+
+        # Resize frame of video to 1/4 size for faster face recognition processing
+        small_frame = cv2.resize(frame, (0, 0), fx=0.25, fy=0.25)
+
+        # Convert the image from BGR color (which OpenCV uses) to RGB color (which face_recognition uses)
+        rgb_small_frame = small_frame[:, :, ::-1]
+
+        # Only process every other frame of video to save time
+        if process_this_frame:
+            # Find all the faces and face encodings in the current frame of video
+            face_locations = face_recognition.face_locations(rgb_small_frame)
+            face_encodings = face_recognition.face_encodings(rgb_small_frame, face_locations)
+
+            for face_encoding in face_encodings:
+                # See if the face is a match for the known face(s)
+                matches = face_recognition.compare_faces(known_face_encodings, face_encoding)
+                name = "Unknown"
+
+                # If a match was found in known_face_encodings, just use the first one.
+                if True in matches:
+                    first_match_index = matches.index(True)
+                    name = known_face_names[first_match_index]
+
+                if name==prenom+" "+nom:
+                    print(name, end=' ')
+                    print("a bien été reconnu, on procède donc a l'attérissage.")
+                    Reco=False
+
+        process_this_frame = not process_this_frame
+
+    #Attérissage et déposage paquet
+    print("attérissage sur .... pour que la personne récupère sa commande")
+    '''land (48.5)'''
+    time.sleep(2)
+    print("land successfull: alt: 0")
+
+    #Attente de 1 minute avant de redémarrer
+    print("attente de 1 minute avant de redémarrer")
+    time.sleep(5)
+    #suppression image du PC
+    print("image supprimé de la mémoire du rpi")
+    for i in range(len(nbImg)):
+        os.remove("img"+ str(nbImg[i]) + ".jpg")
+
+    #retour à la base
+    print("retour à la base pour une nouvelle commande")
+    rtl()
+    armed_off()
+    print("suppression de la commande si pas encore fait")
+
+    try:
+        id=str(int(doc.get("Id")))
+        db.collection('Users').document(id).delete()
+        print("la commande a été supprimée")
+        storage.delete_blob(image)
+        storage.delete()
+    except:
+        print("la commande était déja supprimée")
 
 vehicle.close()
