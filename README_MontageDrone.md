@@ -7,7 +7,7 @@ Le chassis utilisé est le QAV 250. Il est fourni avec toute la visserie nécess
 <p align="center"><img src="https://user-images.githubusercontent.com/50197705/117539922-ffa48400-b00c-11eb-9665-dfd01454da7d.png" alt="PieceA" width="220" height="200">
 
 
-Les moteurs DC XXX sont montés sur les branches du chassis, ils doivent être placés de sorte que les moteurs tournant dans le même sens soit en diagonale comme illustré ci-dessous.
+Les moteurs DC DX2205 sont montés sur les branches du chassis, ils doivent être placés de sorte que les moteurs tournant dans le même sens soit en diagonale comme illustré ci-dessous.
 
 <p align="center"><img src="https://user-images.githubusercontent.com/50197705/117539686-0a124e00-b00c-11eb-8e64-1dd3038c38f5.png" alt="Motor Installation" width="250" height="250">
 
