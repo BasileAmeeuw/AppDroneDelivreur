@@ -1,6 +1,5 @@
 from dronekit import connect, VehicleMode, LocationGlobalRelative
 import time
-import RPi.GPIO as GPIO
 import os, re
 import pyrebase
 import firebase_admin
@@ -193,9 +192,6 @@ firebaseConfig = {
 
 }
 
-#GPIO Mode (BOARD / BCM)
-GPIO.setmode(GPIO.BOARD)
- 
 #set GPIO Pins
 GPIO_TRIGGER1 = board.D14
 GPIO_ECHO1 = board.D15
