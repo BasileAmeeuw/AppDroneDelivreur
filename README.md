@@ -32,7 +32,7 @@ Voici le lien pour la documentation :
 * [Communication entre la Raspberry Pi Zéro et le Flight Controller](https://github.com/BasileAmeeuw/DroneDelivreur/blob/main/Algorithme%20de%20vol/Raspberry-FC%20Communication.pdf)
 * [Utilisation de la librairie dronekit pour communiquer avec le drone](https://github.com/BasileAmeeuw/DroneDelivreur/blob/main/Algorithme%20de%20vol/Talk%20to%20the%20FC%20with%20dronekit.pdf)
 
-IL y a également 2 tutoriels disponible :
+Il y a également 2 tutoriels disponible :
 * [Simulation d'un drone et visualisation sur Mission Planner](https://github.com/BasileAmeeuw/DroneDelivreur/blob/main/Algorithme%20de%20vol/Simulation%20d'un%20drone%20via%20dronekit.mp4)
 * [Utilisation de dronekit pour envoyer des commandes sur un drone](https://github.com/BasileAmeeuw/DroneDelivreur/blob/main/Algorithme%20de%20vol/Tutoriel%20_%20Communication%20MAVLink%20entre%20une%20RPi%20Z%C3%A9ro%2C%20une%20station%20de%20contr%C3%B4le%20et%20un%20drone.mp4)
 
