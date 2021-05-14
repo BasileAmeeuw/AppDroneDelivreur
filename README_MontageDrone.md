@@ -58,6 +58,8 @@ Le train d'atterissage vient simplement remplacer celui fourni avec le chassis Q
 Le plateau qui servira à transporter les consommations des clients en festival est en carton fin, il est possible d'utiliser un autre modèle que celui utilisé dans ce projet si il remplit les mêmes fonctions. Ce plateau est attaché au drône au moyen de 4 attaches et de 2 tiges filetées. Il est important de fixer au centre du plateau les 2 attaches du bas et de maintenir fixes les 2 attaches du haut avec 2 vis de pression après avoir percer les attaches au bon endroit (voir ci-dessous). Les vis de pression sont des M2.
 Ensuite on viendra fixer les 2 modules Ultra-Sons sous les attaches du plateau (avec du collant double-face ou un autre moyen d'adhésion) et les connections se feront via des fils qui longeront les tiges filetées pour se connecter à la Raspberry Pi Zero.
 
+https://youtu.be/HjQtwTYEroA
+
 <p align="center"><img src="https://user-images.githubusercontent.com/50197705/117624823-a310a880-b175-11eb-83eb-096304fb49ca.jpg" width="300" height="350">
 
 
